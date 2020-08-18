@@ -11,12 +11,6 @@ def turn_count(board)
 end
 
 def current_player(board)
-  # turn = 0
-  board.each do |move|
-    if turn_count.even?
-      puts "O"
-    else
-      puts "X"
-    end
+  turn_count(board).even? ? "X" : "O"
   end
 end
