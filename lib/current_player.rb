@@ -11,6 +11,12 @@ def turn_count(board)
 end
 
 def current_player(board)
-  
-
+  turn = 0
+  board.each do |move|
+    if move % 2 == 0
+      "X" turn
+    else
+      "O" turn
+    end
+  end
 end
