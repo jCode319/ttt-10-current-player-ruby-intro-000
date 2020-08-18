@@ -13,10 +13,10 @@ end
 def current_player(board)
   turn = 0
   board.each do |move|
-    if move.even? 
-      "X" turn
+    if turn_count.even?
+      puts "X"
     else
-      "O" turn
+      puts "O"
     end
   end
 end
