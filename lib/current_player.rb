@@ -13,7 +13,7 @@ end
 def current_player(board)
   turn = 0
   board.each do |move|
-    if move % 2 == 0
+    if move.even? 
       "X" turn
     else
       "O" turn
